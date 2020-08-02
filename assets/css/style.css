@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #6a5acd;
+    --tertiary-color: #d3d3d3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+}
+header {
+    background-color: rgba(106, 90, 205, 0.5);
+    background-size: cover;
+    background-position: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 2 10px
+}
+header a {
+    text-decoration: none;
+    color:var(--primary-color);
+}
+header a:hover {
+    background-color: rgba(106, 90, 205, 0);
+    border-radius: 5px;
+    color: var(--tertiary-color);
+}
+header nav {
+    margin-bottom: 10px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li {
+    margin: 15px;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+header nav ul li a:hover {
+    background-color: rgba(106, 90, 205, 0);
+    border-radius: 5px;
+    color: var(--tertiary-color);
+}
+
+.primary-border {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.secondary-border {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end ;
+    height: 500px;
+    color: var(--tertiary-color);
+}
+.about-me-details {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-me-details img {
+    flex: 1 2%;
+}
+/*Grid Styles*/
+.my-work {
+    background-color: var(--tertiary-color);
+}
+.portfolio-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+.portfolio-grid-container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 1fr) ;
+    grid-template-rows: 1fr repeat(3, 1fr);
+    color:  var(--secondary-color);
+    font-size: 1.2rem;
+}
+.portfolio-grid-item {
+    padding: 15px;
+    margin-top: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    ;
+}
+.portfolio-grid-item.run-buddy {
+    grid-column: 1 / span 3;
+    grid-row: 1 /span 2;
+}
+.portfolio-grid-item.horiseon {
+    grid-row: 3 / span 2 ;
+}
+.portfolio-grid-item.frigin-platypus {
+    grid-column: 3;
+    grid-row: 4 / span 2 ;
+}
+.contact-me ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    margin: 50px;
+}
+.contact-me ul li a {
+    padding: 10px 15px;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
