@@ -81,56 +81,123 @@ header nav ul li a:hover {
     background-position: 80%;
     background-attachment: fixed;
     display: flex;
-    justify-content: flex-end ;
-    height: 500px;
+    justify-content: space-evenly;
+    height: 200px;
     color: var(--tertiary-color);
+}
+.quote {
+    margin: 140px auto;
 }
 .about-me-details {
     margin: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-variant: small-caps;
+    font-style: italic;
+}
+.about-me-details p {
+    width: 100%;
+    margin: 30px;
+}
+.my-paragraphs {
+    margin: 15px;
+    padding: 20px;
 }
 .about-me-details img {
-    flex: 1 2%;
+    max-width: 20%;
+    border-radius: 50px 10px;
+    box-shadow: 0 0 10px;
 }
 /*Grid Styles*/
 .my-work {
     background-color: var(--tertiary-color);
 }
 .portfolio-grid-wrapper {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
     display: flex;
-    width: 100%;
-    justify-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 10em 40em;
 }
 .portfolio-grid-container {
     width: 80%;
-    margin: auto;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr repeat(2, 1fr) ;
-    grid-template-rows: 1fr repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr) ;
+    grid-template-rows: repeat(6, 1fr);
     color:  var(--secondary-color);
     font-size: 1.2rem;
+    border-radius: 15px;
+    grid-auto-flow: dense;
 }
 .portfolio-grid-item {
     padding: 15px;
-    margin-top: 5px;
-    border: 2px solid black;
+    margin: 15px;
+    border: none;
     display: flex;
+    text-align: center;
+    position: relative;
+    border-radius: 30px;
+    color: black;
     justify-content: flex-end;
-    text-align: right;
-    ;
 }
-.portfolio-grid-item.run-buddy {
-    grid-column: 1 / span 3;
-    grid-row: 1 /span 2;
+.run-buddy {
+    background-image: url(../images/run-buddy-sample.jpg);
+    background-size: cover;
+    grid-column: 1 / span 6;
+    grid-row: 1 /span 3;
+    box-shadow: 0 0 40px var(--primary-color);
 }
-.portfolio-grid-item.horiseon {
-    grid-row: 3 / span 2 ;
+.resume {
+    background-image: url(../images/resume-sample.jpg);
+    background-size: cover;
+    grid-column:  span 2;
+    grid-row: span 2;
+    box-shadow: 0 0 40px var(--primary-color);
 }
-.portfolio-grid-item.frigin-platypus {
-    grid-column: 3;
-    grid-row: 4 / span 2 ;
+.horiseon {
+    background-image: url(../images/horiseon-sample.jpg);
+    background-size: cover;
+    grid-column: span 2;
+    grid-row: span 3;
+    box-shadow: 0 0 40px var(--primary-color);
 }
+.frigin-platypus {
+    background-image: url(../images/frigin-platypus-sample.jpg);
+    background-size: cover;
+    grid-column: span 2;
+    grid-row:  span 2;
+    box-shadow: 0 0 40px var(--primary-color);
+}
+ .portfolio-grid-item:hover {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    border-radius: 30px;
+    transition: 0.9s;
+    border: solid 2px var(--secondary-color);
+} 
+.link a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+.portfolio-grid-item:hover .link a, .portfolio-grid-item:hover .link p {
+    top: 0;
+    transition: 0.6s;
+    margin: 0 ;
+    padding: 0;
+    background-color: var(--tertiary-color);
+    opacity: 1;
+    z-index: 1;
+} 
+
 .contact-me ul {
     display: flex;
     flex-wrap: wrap;
@@ -143,5 +210,93 @@ header nav ul li a:hover {
     padding: 10px 15px;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 980px)  {
+    .about-me-details {
+        margin: 30px;
+        display: inline;
+        align-items: center;
+        font-variant: small-caps;
+        font-style: italic;
+    }
+    .about-me-details img {
+        align-items: center;
+        max-width: 40%;
+        margin-left:20% ;
+    }
+    .portfolio-grid-container {
+        width: 80%;
+        margin: 20px;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .run-buddy {
+        grid-column: 1 / span 2;
+        grid-row: 1 /span 3;
+        box-shadow: 0 0 40px var(--primary-color);
+    }
+    .resume {
+        grid-column:  span 2;
+        grid-row:  span 2;
+        box-shadow: 0 0 40px var(--primary-color);
+    }
+    .horiseon {
+        grid-column: span 2;
+        grid-row: span 2;
+        box-shadow: 0 0 40px var(--primary-color);
+    }
+    .frigin-platypus {
+        grid-column: span 2;
+        grid-row: span 2;
+        box-shadow: 0 0 40px var(--primary-color);
+    }
+}
+@media screen and (max-width: 768px)  {
+    .portfolio-grid-container {
+        width: 80%;
+        margin: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .run-buddy {
 
+        grid-column: 1 / span 2;
+        grid-row: 1 /span 3;
+        box-shadow: 0 0 40px var(--primary-color);
+    }
+    .resume {
+
+        grid-column:  span 2;
+        grid-row: span 3;
+        box-shadow: 0 0 40px var(--primary-color);
+    }
+    .horiseon {
+
+        grid-column: span 2;
+        grid-row: span 3;
+        box-shadow: 0 0 40px var(--primary-color);
+    }
+    .frigin-platypus {
+        grid-column: span 2;
+        grid-row:  span 2;
+        box-shadow: 0 0 40px var(--primary-color);
+    }
+}@media screen and (max-width: 575px)  {
+    header {
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 1.5em;
+    }
+    .quote {
+        margin: 60px auto;
+        
+    }
+    .portfolio-grid-container {
+
+        width: 80%;
+        margin: 20px;
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-rows: repeat(1, 1fr);
+    }
 }
