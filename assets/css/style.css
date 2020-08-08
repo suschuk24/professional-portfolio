@@ -197,7 +197,6 @@ header nav ul li a:hover {
     opacity: 1;
     z-index: 1;
 } 
-
 .contact-me ul {
     display: flex;
     flex-wrap: wrap;
@@ -210,6 +209,8 @@ header nav ul li a:hover {
     padding: 10px 15px;
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 @media screen and (max-width: 980px)  {
     .about-me-details {
@@ -284,9 +285,10 @@ header nav ul li a:hover {
 }@media screen and (max-width: 575px)  {
     header {
         justify-content: center;
+        background-color: var(--secondary-color);
     }
     header nav ul li a {
-        font-size: 1.5em;
+        font-size: 0.9;
     }
     .quote {
         margin: 60px auto;
