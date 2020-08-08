@@ -1,3 +1,4 @@
+/* General Page Styles */
 :root {
     --primary-color: #000000;
     --secondary-color: #6a5acd;
@@ -8,11 +9,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+.primary-border {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.secondary-border {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding: 30px;
+    margin-bottom: 50px;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--primary-color);
     background-color: var(--tertiary-color);
 }
+/* Header and Navigation Styles */
 header {
     background-color: rgba(106, 90, 205, 0.5);
     background-size: cover;
@@ -34,6 +48,7 @@ header a {
     text-decoration: none;
     color:var(--primary-color);
 }
+/* header hover for white overlay */
 header a:hover {
     background-color: rgba(106, 90, 205, 0);
     border-radius: 5px;
@@ -48,6 +63,7 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
+/* Navigation section styles */
 header nav ul li {
     margin: 15px;
 }
@@ -57,24 +73,13 @@ header nav ul li a {
     font-size: 1.55vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+/* header nav white overlay hover style */
 header nav ul li a:hover {
     background-color: rgba(106, 90, 205, 0);
     border-radius: 5px;
     color: var(--tertiary-color);
 }
-
-.primary-border {
-    color: var(--primary-color);
-    border-bottom: 3px solid var(--secondary-color);
-    padding: 30px;
-    margin-bottom: 50px;
-}
-.secondary-border {
-    color: var(--secondary-color);
-    border-bottom: 3px solid var(--primary-color);
-    padding: 30px;
-    margin-bottom: 50px;
-}
+/* Herro image with quote */
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -88,6 +93,7 @@ header nav ul li a:hover {
 .quote {
     margin: 140px auto;
 }
+/* About Me Section */
 .about-me-details {
     margin: 30px;
     display: flex;
@@ -109,10 +115,11 @@ header nav ul li a:hover {
     border-radius: 50px 10px;
     box-shadow: 0 0 10px;
 }
-/*Grid Styles*/
+/* My Deployedd Work Section, contains grid too */
 .my-work {
     background-color: var(--tertiary-color);
 }
+/*Grid Styles*/
 .portfolio-grid-wrapper {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -134,6 +141,7 @@ header nav ul li a:hover {
     border-radius: 15px;
     grid-auto-flow: dense;
 }
+/* grid items */
 .portfolio-grid-item {
     padding: 15px;
     margin: 15px;
@@ -173,6 +181,7 @@ header nav ul li a:hover {
     grid-row:  span 2;
     box-shadow: 0 0 40px var(--primary-color);
 }
+/* grid hover properties for background fill and opacity change */
  .portfolio-grid-item:hover {
     content: "";
     position: relative;
@@ -197,6 +206,7 @@ header nav ul li a:hover {
     opacity: 1;
     z-index: 1;
 } 
+/* contact me styles */
 .contact-me ul {
     display: flex;
     flex-wrap: wrap;
@@ -212,6 +222,7 @@ header nav ul li a:hover {
     text-decoration: none;
     color: var(--primary-color);
 }
+/* media styles */
 @media screen and (max-width: 980px)  {
     .about-me-details {
         margin: 30px;
@@ -252,6 +263,7 @@ header nav ul li a:hover {
         box-shadow: 0 0 40px var(--primary-color);
     }
 }
+/* media styles for 768px max */
 @media screen and (max-width: 768px)  {
     .portfolio-grid-container {
         width: 80%;
@@ -282,6 +294,7 @@ header nav ul li a:hover {
         grid-row:  span 2;
         box-shadow: 0 0 40px var(--primary-color);
     }
+    /* media styles for 757px max */
 }@media screen and (max-width: 575px)  {
     header {
         justify-content: center;
