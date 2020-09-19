@@ -153,31 +153,38 @@ header nav ul li a:hover {
     color: black;
     justify-content: flex-end;
 }
-.run-buddy {
-    background-image: url(../images/run-buddy-sample.jpg);
+.movie-search {
+    background-image: url(../images/movie-search-sample.jpg);
     background-size: cover;
     grid-column: 1 / span 6;
     grid-row: 1 /span 3;
     box-shadow: 0 0 40px var(--primary-color);
 }
+.run-buddy {
+    background-image: url(../images/run-buddy-sample.jpg);
+    background-size: cover;
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 2;
+    box-shadow: 0 0 40px var(--primary-color);
+}
 .resume {
     background-image: url(../images/resume-sample.jpg);
     background-size: cover;
-    grid-column:  span 2;
+    grid-column:  4 / span 2;
     grid-row: span 2;
     box-shadow: 0 0 40px var(--primary-color);
 }
 .horiseon {
     background-image: url(../images/horiseon-sample.jpg);
     background-size: cover;
-    grid-column: span 2;
-    grid-row: span 3;
+    grid-column: 2 / span 2;
+    grid-row: span 2;
     box-shadow: 0 0 40px var(--primary-color);
 }
-.frigin-platypus {
-    background-image: url(../images/frigin-platypus-sample.jpg);
+.weather-forecast {
+    background-image: url(../images/weather-forecast-sample.jpg);
     background-size: cover;
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row:  span 2;
     box-shadow: 0 0 40px var(--primary-color);
 }
