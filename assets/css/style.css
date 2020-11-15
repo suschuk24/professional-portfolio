@@ -174,15 +174,15 @@ header nav ul li a:hover {
     grid-row: span 2;
     box-shadow: 0 0 40px var(--primary-color);
 }
-.horiseon {
-    background-image: url(../images/horiseon-sample.jpg);
+.zookeepr {
+    background-image: url(../images/zookeepr-sample.jpg);
     background-size: cover;
     grid-column: 2 / span 2;
     grid-row: span 2;
     box-shadow: 0 0 40px var(--primary-color);
 }
-.weather-forecast {
-    background-image: url(../images/weather-forecast-sample.jpg);
+.cloud-rolodex {
+    background-image: url(../images/cloud-rolodex-sample.jpg);
     background-size: cover;
     grid-column: span 3;
     grid-row:  span 2;
