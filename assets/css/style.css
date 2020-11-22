@@ -220,13 +220,13 @@ header nav ul li a:hover {
     font-size: 1.2rem;
     border-radius: 15px;
     grid-auto-flow: dense;
+    
 }
 
 .movie-search-details {
     background-color: white;
     background-size: cover;
     grid-column: span 6;
-    /* grid-row:  span 1; */
     box-shadow: 0 0 40px var(--primary-color);
 }
 .run-buddy-details {
@@ -273,6 +273,9 @@ header nav ul li a:hover {
     color: var(--primary-color);
     font-weight: bolder;
     padding: 0;
+}
+.link li  {
+    list-style: none;
 }
 .portfolio-grid-item:hover .link a, .portfolio-grid-item:hover .link p {
     top: 0;
