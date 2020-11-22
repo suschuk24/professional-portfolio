@@ -21,6 +21,11 @@
     padding: 30px;
     margin-bottom: 50px;
 }
+.terceriary-border {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--primary-color);
+    margin-top: 20px;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--primary-color);
@@ -196,6 +201,62 @@ header nav ul li a:hover {
     grid-row:  span 2;
     box-shadow: 0 0 40px var(--primary-color);
 }
+/* Details Grid ITEMS */
+.details-grid-wrapper {
+    background-image: url("../images/container-bg.jpg");
+    background-size: contain;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+.details-grid-container {
+    width: 80%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) ;
+    grid-template-rows: repeat(4, 1fr);
+    color:  var(--secondary-color);
+    font-size: 1.2rem;
+    border-radius: 15px;
+    grid-auto-flow: dense;
+}
+
+.movie-search-details {
+    background-color: white;
+    background-size: cover;
+    grid-column: span 6;
+    /* grid-row:  span 1; */
+    box-shadow: 0 0 40px var(--primary-color);
+}
+.run-buddy-details {
+    background-color: white;
+    background-size: cover;
+    grid-column: 1/ span 3;
+    box-shadow: 0 0 40px var(--primary-color);
+}
+.weather-forecast-details {
+    
+    background-color: white;
+    background-size: cover;
+    grid-column: span 3;
+    grid-row:  span 1;
+    box-shadow: 0 0 40px var(--primary-color);
+}
+.zookeepr-details {
+    background-color: white;
+    background-size: cover;
+    grid-column: span 6;
+    /* grid-row:  span 1; */
+    box-shadow: 0 0 40px var(--primary-color);
+}
+.cloud-rolodex-details {
+    background-color: white;
+    background-size: cover;
+    grid-column: span 6;
+    /* grid-row:  span 1; */
+    box-shadow: 0 0 40px var(--primary-color);
+}
 /* grid hover properties for background fill and opacity change */
  .portfolio-grid-item:hover {
     content: "";
@@ -211,6 +272,7 @@ header nav ul li a:hover {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bolder;
+    padding: 0;
 }
 .portfolio-grid-item:hover .link a, .portfolio-grid-item:hover .link p {
     top: 0;
