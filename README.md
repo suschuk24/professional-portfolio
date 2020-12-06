@@ -8,23 +8,23 @@ Welcome to my professional portfolio page and thank you for taking the time to v
 
 ### Full Desktop Display Size
 
-[Screenshot 1](./assets/images/screenshot-1.jpg)
+![Screenshot 1](./assets/images/screenshot-1.jpg)
 
 ### 980px
 
-[Screenshot 2 A](./assets/images/screenshot-2-a.jpg)
+![Screenshot 2 A](./assets/images/screenshot-2-a.jpg)
 
-[Screenshot 2 B](./assets/images/screenshot-2-b.jpg)
+![Screenshot 2 B](./assets/images/screenshot-2-b.jpg)
 
 ### 768px
 
-[Screenshot 3 A](./assets/images/screenshot-3-a.jpg)
+![Screenshot 3 A](./assets/images/screenshot-3-a.jpg)
 
-[Screenshot 2 B](./assets/images/screenshot-3-b.jpg)
+![Screenshot 2 B](./assets/images/screenshot-3-b.jpg)
 
 ### 575px
 
-[Screenshot 4](./assets/images/screenshot-4.jpg)
+![Screenshot 4](./assets/images/screenshot-4.jpg)
 
 ## Link to Deployed Site:
 
